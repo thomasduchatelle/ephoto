@@ -16,7 +16,7 @@ jobs:
         uses: ./.github/actions/install-go
       - name: start mock services
         run: docker-compose up -d
-      - run: make test-domain test-app-api test-cli
+      - run: make test-pkg test-app-api test-cli
 
   test-ts-code:
     runs-on: ubuntu-latest

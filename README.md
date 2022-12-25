@@ -43,8 +43,8 @@ Components:
 
 * `infra-data`: terraform project to create required infrastructure on AWS for the CLI to work. Project won't be re-usable in a different context without overriding backend and some other defaults.
 * `domain`: core domain model and business logic from Hexagonal Architecture. This domain is integrated and used from both CLI and app's APIs
-* [DPhoto CLI](./dphoto/README.md): installed on the end-user computer, backup photos and videos using command line interface
-* [APP](./app/README.md): deployed on top of `infra-data`, contains the viewer UI, and APIs for the UI and the CLI
+* [DPhoto CLI](cmd/dphoto/README.md): installed on the end-user computer, backup photos and videos using command line interface
+* [APP](deployments/sls/README.md): deployed on top of `infra-data`, contains the viewer UI, and APIs for the UI and the CLI
 
 ### Install development environment
 

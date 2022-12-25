@@ -1,6 +1,6 @@
 package main
 
-import "github.com/thomasduchatelle/dphoto/tools/dphotoops/cmd"
+import "github.com/thomasduchatelle/ephoto/tools/dphotoops/cmd"
 
 func main() {
 	cmd.Execute()
