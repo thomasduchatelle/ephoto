@@ -4,7 +4,6 @@ go 1.19
 
 require (
 	github.com/alexeyco/simpletable v1.0.0
-	github.com/aws/aws-lambda-go v1.27.1
 	github.com/aws/aws-sdk-go v1.39.0
 	github.com/buger/goterm v1.0.0
 	github.com/dixonwille/skywalker v0.0.0-20170804202456-07698455332d
@@ -29,8 +28,6 @@ require (
 	github.com/disintegration/imaging v1.6.2
 	github.com/go-acme/lego/v4 v4.6.0
 	github.com/golang-jwt/jwt/v4 v4.2.0
-	github.com/gophercloud/utils v0.0.0-20210216074907-f6de111f2eae
-	github.com/tencentyun/scf-go-lib v0.0.0-20211123032342-f972dcd16ff6
 )
 
 require (
