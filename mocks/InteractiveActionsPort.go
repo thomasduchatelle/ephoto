@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	"github.com/thomasduchatelle/ephoto/cmd/dphoto/cmd/ui"
+	"github.com/thomasduchatelle/ephoto/cmd/fphoto/cmd/ui"
 	time "time"
 
 	mock "github.com/stretchr/testify/mock"

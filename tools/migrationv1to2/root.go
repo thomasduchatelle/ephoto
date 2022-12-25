@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/logrusorgru/aurora/v3"
 	"github.com/pkg/errors"
-	"github.com/thomasduchatelle/ephoto/cmd/dphoto/printer"
+	"github.com/thomasduchatelle/ephoto/cmd/fphoto/printer"
 	"github.com/thomasduchatelle/ephoto/tools/migrationv1to2/migrator"
 	"os"
 	"time"
