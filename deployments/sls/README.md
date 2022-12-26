@@ -1,32 +1,25 @@
 DPhoto - VIEWER
 =======================================
 
-WEB viewer for photo and video backed up with DPhoto command line interface.
-
-Main features:
-
-* authenticate with Google account
-* online viewer for backed-up photos and videos
-* download medias pack, selected by date, album, and/or tags
+Online web app, originally designed to view backed up photos and video from the cloud. 
 
 Getting Started
 ---------------------------------------
 
-App contains several sub-projects:
+App use _serverless.com_ deploys on AWS:
 
-* viewer API: serverless backend to serve data for viewer (golang)
-* viewer UI: create-react-app deployed as static website on S3 (typescript)
-* (roadmap) more generic API to be used by CLI instead of direct IAM role
+* `api/lambdas`: serverless backend to serve data for the web (golang)
+* `web`: create-react-app deployed as static website on S3 (typescript)
 
 They are all deployed as a monolith using _Serverless Framework_. To deploy on dev:
 
     # test, build, and deploy
-    make deploy
+    make deploy-app
 
     # only re-deploy
     sls deploy
 
-    # destroy all software bits (not the data managed by 'infra-data')
+    # destroy all software bits (not the data stored on 'infra-data')
     sls remove
 
 Backend code is following the hexagonal architecture: core logic is developed in `domain` and imported here.
