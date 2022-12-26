@@ -20,20 +20,21 @@ test-go: test-domain test-cli test-app-api
 #######################################
 
 .PHONY: setup-infra-data test-infra-data deploy-infra-data
+INFRA_DATA := deployments/infra-data
 
 setup-infra-data:
 	command -v tfenv > /dev/null \
-		cd infra-data && \
+		cd $(INFRA_DATA) && \
 		tfenv install && tfenv use
-	cd infra-data && \
+	cd $(INFRA_DATA) && \
 		terraform init
 
 test-infra-data:
-	cd infra-data && \
+	cd $(INFRA_DATA) && \
 		terraform validate
 
 deploy-infra-data:
-	cd infra-data && \
+	cd $(INFRA_DATA) && \
 		terraform apply
 
 #######################################
